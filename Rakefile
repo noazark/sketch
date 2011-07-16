@@ -3,6 +3,9 @@
 include Rake::DSL
 
 require 'rake/clean'
+require 'bundler'
+
+Bundler.require(:default) if defined?(Bundler)
 
 BIN    = "public_html"
 
@@ -18,21 +21,20 @@ JS   = COFFEE.ext('js')
 CLOBBER.include(HTML, CSS, JS)
 
 rule '.html' => '.haml' do |t|
-   puts "  HAML #{t.source}"
-   mkdir_p t.source.pathmap("%{^src,#{BIN}}d")
-   sh 'haml','-f','html5', t.source, t.source.pathmap("%{^src,#{BIN}}X.html")
-#   sh 'haml', t.source, t.name
+  puts "** HAML #{t.source}"
+  mkdir_p t.source.pathmap("%{^src,#{BIN}}d")
+  system 'haml','-f','html5', t.source, t.source.pathmap("%{^src,#{BIN}}X.html")
 end
 
 rule '.css' => '.scss' do |t|   
-   puts "  SASS #{t.source}"
-   mkdir_p t.source.pathmap("%{^src,#{BIN}}d")
-   sh 'sass', t.source, t.source.pathmap("%{^src,#{BIN}}X.css"), "--no-cache"
+  puts "** SASS #{t.source}"
+  mkdir_p t.source.pathmap("%{^src,#{BIN}}d")
+  system 'sass', t.source, t.source.pathmap("%{^src,#{BIN}}X.css"), "--no-cache"
 end
 
 rule '.js' => '.coffee' do |t|
-    puts "COFFEE #{t.source}"
-    sh 'coffee', '-o', t.source.pathmap("%{^src,#{BIN}}d"), '-c', t.source
+  puts "** COFFEE #{t.source}"
+  system 'coffee', '-o', t.source.pathmap("%{^src,#{BIN}}d"), '-c', t.source
 end
 
 desc "Build all HTML, CSS and JavaScript files"
@@ -40,23 +42,20 @@ task :default => (HTML + CSS + JS)
 
 desc "Continuously watch for changes and rebuild files"
 task :watch => [:default] do
-    require 'rubygems'
-    require 'fssm'
+  def rebuild
+    system 'rake'
+    puts "   OK"
+  rescue
+    nil
+  end
 
-    def rebuild
-        sh 'rake'
-        puts "    OK"
-    rescue
-        nil
+  begin
+    FSSM.monitor(nil, ['**/*.coffee', '**/*.haml', '**/*.scss']) do
+      update { rebuild }
+      delete { rebuild }
+      create { rebuild }
     end
-
-    begin
-        FSSM.monitor(nil, ['**/*.coffee', '**/*.haml', '**/*.scss']) do
-            update { rebuild }
-            delete { rebuild }
-            create { rebuild }
-        end
-    rescue FSSM::CallbackError => e
-        Process.exit
-    end
+  rescue FSSM::CallbackError => e
+    Process.exit
+  end
 end
