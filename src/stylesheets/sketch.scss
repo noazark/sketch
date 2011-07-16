@@ -1,5 +1,12 @@
 @import "border";
+@import "color";
 
+@mixin frame($color: $black) {
+  @include border($color);
+  @include rounded();
+}
+
+/* tags */
 body, body * {
   margin:1em;
   padding:1em;
@@ -13,18 +20,28 @@ fieldset, font, form, h1, h2, h3, h4, h5, h6, hr, i, img, input, ins, kbd, label
 li, link, map, menu, meta, noframes, noscript, object, ol, optgroup, option, p, param, pre, q, 
 s, samp, select, small, span, strike, strong, style, sub, sup, table, tbody, td, 
 textarea, tfoot, th, thead, tr, tt, u, ul {
-  @include black-border;
   display:block;
+  
+  @include frame();
+  & > .frame-description {
+    @include black;
+  }
 }
 
 li {
   list-style:none;
   
-  @include yellow-border;
+  @include frame($blue);
+  & > .frame-description {
+    @include blue;
+  }
 }
 
 p {
-  @include blue-border;
+  @include frame($yellow);
+  & > .frame-description {
+    @include yellow;
+  }
 }
 
 /* classes */
@@ -41,5 +58,6 @@ p {
 .frame-description {
   position:absolute;
   margin: -1em;
-  padding: 0.25em;
+  padding: 0.25em 0.5em;
+  @include rounded(0 0 $border-width 0);
 }
