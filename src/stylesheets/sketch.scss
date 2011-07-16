@@ -1,6 +1,8 @@
 @import "border";
 @import "color";
 
+$spacing: 18px;
+
 @mixin frame($color: $black) {
   @include border($color);
   @include rounded();
@@ -8,9 +10,11 @@
 
 /* tags */
 body, body * {
-  margin:1em;
-  padding:1em;
-  padding-bottom:2em;
+  margin: $spacing;
+  padding: $spacing;
+  padding-right: 0.5 * $spacing;
+  padding-bottom: 2 * $spacing;
+  padding-left: 0.5 * $spacing;
   box-sizing:border-box;
 }
 
@@ -51,13 +55,13 @@ p {
   border:none;
 }
 
-.suppress_all * {
-  display:inline-block;
-}
-
 .frame-description {
   position:absolute;
-  margin: -1em;
+  margin-top: -($spacing + $border-width);
+  margin-left: -((0.5 * $spacing) + $border-width);
   padding: 0.25em 0.5em;
-  @include rounded(0 0 $border-width 0);
+  @include rounded();
+  & span {
+    display: inline;
+  }
 }

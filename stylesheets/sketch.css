@@ -1,8 +1,10 @@
 /* tags */
 body, body * {
-  margin: 1em;
-  padding: 1em;
-  padding-bottom: 2em;
+  margin: 18px;
+  padding: 18px;
+  padding-right: 9px;
+  padding-bottom: 36px;
+  padding-left: 9px;
   box-sizing: border-box; }
 
 a, abbr, acronym, address, applet, area, b, base, basefont, bdo, big, blockquote, body, br,
@@ -50,13 +52,13 @@ p {
   padding: 0;
   border: none; }
 
-.suppress_all * {
-  display: inline-block; }
-
 .frame-description {
   position: absolute;
-  margin: -1em;
+  margin-top: -21px;
+  margin-left: -12px;
   padding: 0.25em 0.5em;
-  border-radius: 0 0 3px 0;
-  -moz-border-radius: 0 0 3px 0;
-  -webkit-border-radius: 0 0 3px 0; }
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+  .frame-description span {
+    display: inline; }
