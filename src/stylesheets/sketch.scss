@@ -1,42 +1,4 @@
-/* layout */
-$border-width: 3px;
-
-/* colors */
-$black: #222222;
-$black-shadow: #161616;
-$black-border: #111111;
-
-$white: #EEEEEE;
-$white-shadow: #FFFFFF;
-$white-border: #EEEEEE;
-
-$red: #DB1A1A;
-$red-shadow: #FF5757;
-$red-border: #FF4D4D;
-
-$orange: #F78C00;
-$orange-shadow: #FFAC40;
-$orange-border: #FFB452;
-
-$yellow: #FFFF00;
-$yellow-shadow: #FCE877;
-$yellow-border: #FFED66;
-
-$green: #70B30C;
-$green-shadow: #AFE362;
-$green-border: #9EE632;
-
-$blue: #094CB8;
-$blue-shadow: #376DC4;
-$blue-border: #387DEB;
-
-$violet: #8E19B5;
-$violet-shadow: #B132DB;
-$violet-border: #C72DFA;
-
-$pink: #DE4068;
-$pink-shadow: #FF5E86;
-$pink-border: #FF809F;
+@import "border";
 
 body, body * {
   margin:1em;
@@ -51,19 +13,18 @@ fieldset, font, form, h1, h2, h3, h4, h5, h6, hr, i, img, input, ins, kbd, label
 li, link, map, menu, meta, noframes, noscript, object, ol, optgroup, option, p, param, pre, q, 
 s, samp, select, small, span, strike, strong, style, sub, sup, table, tbody, td, 
 textarea, tfoot, th, thead, tr, tt, u, ul {
-  border-width: $border-width;
-  border-style: solid;
+  @include black-border;
   display:block;
 }
 
 li {
   list-style:none;
   
-  border-color: $yellow;
+  @include yellow-border;
 }
 
 p {
-  border-color: $blue;
+  @include blue-border;
 }
 
 /* classes */

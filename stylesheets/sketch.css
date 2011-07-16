@@ -1,4 +1,3 @@
-/* layout */
 /* colors */
 body, body * {
   margin: 1em;
@@ -12,16 +11,24 @@ fieldset, font, form, h1, h2, h3, h4, h5, h6, hr, i, img, input, ins, kbd, label
 li, link, map, menu, meta, noframes, noscript, object, ol, optgroup, option, p, param, pre, q,
 s, samp, select, small, span, strike, strong, style, sub, sup, table, tbody, td,
 textarea, tfoot, th, thead, tr, tt, u, ul {
-  border-width: 3px;
-  border-style: solid;
+  border: 3px solid #222222;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   display: block; }
 
 li {
   list-style: none;
-  border-color: yellow; }
+  border: 3px solid yellow;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
 
 p {
-  border-color: #094cb8; }
+  border: 3px solid #094cb8;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
