@@ -7,7 +7,7 @@ require 'bundler'
 
 Bundler.require(:default) if defined?(Bundler)
 
-BIN    = "public_html"
+BIN    = "."
 
 HAML   = FileList['**/*.haml']
 LESS   = FileList['**/*.less']
@@ -44,7 +44,6 @@ desc "Continuously watch for changes and rebuild files"
 task :watch => [:default] do
   def rebuild
     system 'rake'
-    puts "   OK"
   rescue
     nil
   end
