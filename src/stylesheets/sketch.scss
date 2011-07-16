@@ -11,7 +11,7 @@ $spacing: 18px;
   }
 }
 
-/* tags */
+/* description */
 body {
   background-color: $black;
 }
@@ -36,16 +36,6 @@ textarea, tfoot, th, thead, tr, tt, u, ul {
   @include frame();
 }
 
-li {
-  list-style:none;
-  
-  @include frame($blue, $white);
-}
-
-span {
-  @include frame($yellow, $black);
-}
-
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
   margin:0;
@@ -63,3 +53,8 @@ span {
     display: inline;
   }
 }
+
+/* tag colors */
+li { @include frame($blue, $white); }
+span { @include frame($yellow, $black); }
+ul { @include frame($white, $black); }

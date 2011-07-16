@@ -1,4 +1,4 @@
-/* tags */
+/* description */
 body {
   background-color: #222222; }
 
@@ -31,23 +31,7 @@ textarea, tfoot, th, thead, tr, tt, u, ul {
     color: #eeeeee; }
 
 li {
-  list-style: none;
-  border: 5px solid #094cb8;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
-  li > .frame-description {
-    background-color: #094cb8;
-    color: #eeeeee; }
-
-span {
-  border: 5px solid yellow;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
-  span > .frame-description {
-    background-color: yellow;
-    color: #222222; }
+  list-style: none; }
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
@@ -65,3 +49,31 @@ span {
   -webkit-border-radius: 5px; }
   .frame-description span {
     display: inline; }
+
+/* tag colors */
+li {
+  border: 5px solid #094cb8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  li > .frame-description {
+    background-color: #094cb8;
+    color: #eeeeee; }
+
+span {
+  border: 5px solid yellow;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  span > .frame-description {
+    background-color: yellow;
+    color: #222222; }
+
+ul {
+  border: 5px solid #eeeeee;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  ul > .frame-description {
+    background-color: #eeeeee;
+    color: #222222; }
