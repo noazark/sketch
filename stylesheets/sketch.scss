@@ -1,0 +1,84 @@
+/* layout */
+$border-width: 3px;
+
+/* colors */
+$black: #222222;
+$black-shadow: #161616;
+$black-border: #111111;
+
+$white: #EEEEEE;
+$white-shadow: #FFFFFF;
+$white-border: #EEEEEE;
+
+$red: #DB1A1A;
+$red-shadow: #FF5757;
+$red-border: #FF4D4D;
+
+$orange: #F78C00;
+$orange-shadow: #FFAC40;
+$orange-border: #FFB452;
+
+$yellow: #FFFF00;
+$yellow-shadow: #FCE877;
+$yellow-border: #FFED66;
+
+$green: #70B30C;
+$green-shadow: #AFE362;
+$green-border: #9EE632;
+
+$blue: #094CB8;
+$blue-shadow: #376DC4;
+$blue-border: #387DEB;
+
+$violet: #8E19B5;
+$violet-shadow: #B132DB;
+$violet-border: #C72DFA;
+
+$pink: #DE4068;
+$pink-shadow: #FF5E86;
+$pink-border: #FF809F;
+
+body, body * {
+  margin:1em;
+  padding:1em;
+  padding-bottom:2em;
+  box-sizing:border-box;
+}
+
+a, abbr, acronym, address, applet, area, b, base, basefont, bdo, big, blockquote, body, br, 
+button, caption, center, cite, code, col, colgroup, dd, del, dfn, dir, div, dl, dt, em, 
+fieldset, font, form, head, h1, h2, h3, h4, h5, h6, hr, i, img, input, ins, kbd, label, legend, 
+li, link, map, menu, meta, noframes, noscript, object, ol, optgroup, option, p, param, pre, q, 
+s, samp, script, select, small, span, strike, strong, style, sub, sup, table, tbody, td, 
+textarea, tfoot, th, thead, title, tr, tt, u, ul {
+  border-width: $border-width;
+  border-style: solid;
+}
+
+li {
+  list-style:none;
+  
+  border-color: $yellow;
+}
+
+p {
+  border-color: $blue;
+}
+
+/* classes */
+.suppress {
+  margin:0;
+  padding:0;
+  border:none;
+}
+.suppress_all, .suppress_all * {
+  margin:0;
+  padding:0;
+  border:none;
+}
+
+.frame-description {
+  position:absolute;
+  margin: -1em;
+  padding: 0.25em;
+}
