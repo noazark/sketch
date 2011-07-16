@@ -26,10 +26,14 @@ rule '.html' => '.haml' do |t|
   system 'haml','-f','html5', t.source, t.source.pathmap("%{^src,#{BIN}}X.html")
 end
 
-rule '.css' => '.scss' do |t|   
-  puts "** SASS #{t.source}"
-  mkdir_p t.source.pathmap("%{^src,#{BIN}}d")
-  system 'sass', t.source, t.source.pathmap("%{^src,#{BIN}}X.css"), "--no-cache"
+rule '.css' => '.scss' do |t|
+  if t.source.pathmap("%n").start_with?("_")
+  
+  else
+    puts "** SASS #{t.source}"
+    mkdir_p t.source.pathmap("%{^src,#{BIN}}d")
+    system 'sass', t.source, t.source.pathmap("%{^src,#{BIN}}X.css"), "--no-cache"
+  end
 end
 
 rule '.js' => '.coffee' do |t|
