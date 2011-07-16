@@ -1,4 +1,7 @@
 # origin https://gist.github.com/913362
+
+include Rake::DSL
+
 require 'rake/clean'
 
 BIN    = "public_html"
