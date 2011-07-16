@@ -1,22 +1,20 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.1.1)
-    execjs (1.2.0)
-      multi_json (~> 1.0)
+    ffi (1.0.9)
     fssm (0.2.7)
     haml (3.1.2)
-    multi_json (1.0.3)
+    rake (0.9.2)
+    rb-inotify (0.8.5)
+      ffi (>= 0.5.0)
     sass (3.1.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script
   fssm
   haml
+  rake
+  rb-inotify
   sass
