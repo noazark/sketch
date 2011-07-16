@@ -1,4 +1,7 @@
 /* tags */
+body {
+  background-color: #222222; }
+
 body, body * {
   margin: 18px;
   padding: 18px;
@@ -14,35 +17,35 @@ li, link, map, menu, meta, noframes, noscript, object, ol, optgroup, option, p, 
 s, samp, select, small, span, strike, strong, style, sub, sup, table, tbody, td,
 textarea, tfoot, th, thead, tr, tt, u, ul {
   display: block;
-  border: 3px solid #222222;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
+  border: 5px solid #db1a1a;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
   a > .frame-description, abbr > .frame-description, acronym > .frame-description, address > .frame-description, applet > .frame-description, area > .frame-description, b > .frame-description, base > .frame-description, basefont > .frame-description, bdo > .frame-description, big > .frame-description, blockquote > .frame-description, body > .frame-description, br > .frame-description,
   button > .frame-description, caption > .frame-description, center > .frame-description, cite > .frame-description, code > .frame-description, col > .frame-description, colgroup > .frame-description, dd > .frame-description, del > .frame-description, dfn > .frame-description, dir > .frame-description, div > .frame-description, dl > .frame-description, dt > .frame-description, em > .frame-description,
   fieldset > .frame-description, font > .frame-description, form > .frame-description, h1 > .frame-description, h2 > .frame-description, h3 > .frame-description, h4 > .frame-description, h5 > .frame-description, h6 > .frame-description, hr > .frame-description, i > .frame-description, img > .frame-description, input > .frame-description, ins > .frame-description, kbd > .frame-description, label > .frame-description, legend > .frame-description,
   li > .frame-description, link > .frame-description, map > .frame-description, menu > .frame-description, meta > .frame-description, noframes > .frame-description, noscript > .frame-description, object > .frame-description, ol > .frame-description, optgroup > .frame-description, option > .frame-description, p > .frame-description, param > .frame-description, pre > .frame-description, q > .frame-description,
   s > .frame-description, samp > .frame-description, select > .frame-description, small > .frame-description, span > .frame-description, strike > .frame-description, strong > .frame-description, style > .frame-description, sub > .frame-description, sup > .frame-description, table > .frame-description, tbody > .frame-description, td > .frame-description,
   textarea > .frame-description, tfoot > .frame-description, th > .frame-description, thead > .frame-description, tr > .frame-description, tt > .frame-description, u > .frame-description, ul > .frame-description {
-    background-color: #222222;
+    background-color: #db1a1a;
     color: #eeeeee; }
 
 li {
   list-style: none;
-  border: 3px solid #094cb8;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
+  border: 5px solid #094cb8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
   li > .frame-description {
     background-color: #094cb8;
     color: #eeeeee; }
 
-p {
-  border: 3px solid yellow;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
-  p > .frame-description {
+span {
+  border: 5px solid yellow;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  span > .frame-description {
     background-color: yellow;
     color: #222222; }
 
@@ -54,11 +57,11 @@ p {
 
 .frame-description {
   position: absolute;
-  margin-top: -21px;
-  margin-left: -12px;
+  margin-top: -23px;
+  margin-left: -14px;
   padding: 0.25em 0.5em;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
   .frame-description span {
     display: inline; }

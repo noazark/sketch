@@ -3,12 +3,19 @@
 
 $spacing: 18px;
 
-@mixin frame($color: $black) {
+@mixin frame($color: $red, $text: $white) {
   @include border($color);
   @include rounded();
+  & > .frame-description {
+    @include base($color, $text)
+  }
 }
 
 /* tags */
+body {
+  background-color: $black;
+}
+
 body, body * {
   margin: $spacing;
   padding: $spacing;
@@ -27,25 +34,16 @@ textarea, tfoot, th, thead, tr, tt, u, ul {
   display:block;
   
   @include frame();
-  & > .frame-description {
-    @include black;
-  }
 }
 
 li {
   list-style:none;
   
-  @include frame($blue);
-  & > .frame-description {
-    @include blue;
-  }
+  @include frame($blue, $white);
 }
 
-p {
-  @include frame($yellow);
-  & > .frame-description {
-    @include yellow;
-  }
+span {
+  @include frame($yellow, $black);
 }
 
 /* classes */
