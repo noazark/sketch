@@ -8,7 +8,19 @@ $base-width: 128px;
   @include border($color);
   @include rounded();
   & > .frame-description {
-    @include base($color, $text)
+    @include base($color, $text);
+  }
+}
+
+@mixin no_frame($color: $white, $text: $black) {
+  padding:0;
+  @include no_border();
+  @include rounded();
+  & > .frame-description {
+    margin:0;
+    position:static;
+    display:inline;
+    @include base($color, $text);
   }
 }
 
@@ -43,7 +55,7 @@ body {
   font-family: mono;
 }
 li { list-style:none; }
-span { display:inline-block; width:2*$base-width;}
+span { display:inherit;}
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
@@ -64,9 +76,9 @@ span { display:inline-block; width:2*$base-width;}
 }
 
 /* tag colors */
-       body { @include frame($black);          }
-         li { @include frame($green, $white);  }
-          p { @include frame($orange, $white); }
-       span { @include frame($yellow, $black); }
-         ul { @include frame($white, $black);  }
+     body { @include frame($black);          }
+       li { @include frame($green, $white);  }
+        p { @include frame($orange, $white); }
+     span { @include no_frame();             }
+       ul { @include frame($red, $white);    }
 
