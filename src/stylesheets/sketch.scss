@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono&v2);
 @import "border";
 @import "color";
 
@@ -33,11 +34,14 @@ body, body * {
   padding-bottom: 1.5 * $spacing;
   padding-left: 0.5 * $spacing;
   box-sizing:border-box;
+  font-family: 'Droid Sans Mono', mono;
+  font-size: 16px;
+  font-weight: normal;
   @include frame();
   & > .frame-description:first-child + * {
     margin-top:0;
   }
-} 
+}
 
 /* tag overrides */
 body {
@@ -45,7 +49,6 @@ body {
   padding: 0.5 * $spacing;
   width: 8 * $base-width;
   background-color: $background;
-  font-family: mono;
   color: $white;
 }
 li { list-style:none; }
@@ -56,6 +59,15 @@ span { display:inherit;}
   margin:0;
   padding:0;
   border:none;
+  & > h1 {
+    font-size:2em;
+  }
+  & > h2 {
+    font-size:1.5em;
+  }
+  & > h3 {
+    font-size:1.17em;
+  }
 }
 
 .frame-description {
@@ -63,25 +75,30 @@ span { display:inherit;}
   margin-top: -($spacing + $border-width);
   margin-left: -((0.5 * $spacing) + $border-width);
   padding: 0.25em 0.5em;
+  
   @include rounded();
   & span {
     display: inline;
+    
+    &.tag_name {
+      font-weight:bold;
+    }
   }
 }
 
 /* tag colors */
-        a { @include no_frame();             }
-     body { @include frame($black);          }
-       em { @include no_frame();             }
-       h1 { @include no_frame();             }
-       h2 { @include no_frame();             }
-       h3 { @include no_frame();             }
-       h4 { @include no_frame();             }
-       h5 { @include no_frame();             }
-       h6 { @include no_frame();             }
-       li { @include frame($green, $white);  }
-        p { @include frame($orange, $white); }
-     span { @include no_frame();             }
-   strong { @include no_frame();             }
-       ul { @include frame($red, $white);    }
+        a { @include no_frame();                }
+     body { @include frame($black);             }
+       em { @include no_frame();                }
+       h1 { @include no_frame($violet, $white); }
+       h2 { @include no_frame($violet, $white); }
+       h3 { @include no_frame();                }
+       h4 { @include no_frame();                }
+       h5 { @include no_frame();                }
+       h6 { @include no_frame();                }
+       li { @include frame($green, $white);     }
+        p { @include frame($orange, $white);    }
+     span { @include no_frame();                }
+   strong { @include no_frame();                }
+       ul { @include frame($red, $white);       }
 

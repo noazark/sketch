@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono&v2);
 /* description */
 body, body * {
   margin: 16px 0;
@@ -6,6 +7,9 @@ body, body * {
   padding-bottom: 48px;
   padding-left: 16px;
   box-sizing: border-box;
+  font-family: 'Droid Sans Mono', mono;
+  font-size: 16px;
+  font-weight: normal;
   border: 4px solid #eeeeee;
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -22,7 +26,6 @@ body {
   padding: 16px;
   width: 1024px;
   background-color: #161616;
-  font-family: mono;
   color: #eeeeee; }
 
 li {
@@ -36,6 +39,12 @@ span {
   margin: 0;
   padding: 0;
   border: none; }
+  .suppress > h1, .suppress_all > h1, .suppress_all * > h1 {
+    font-size: 2em; }
+  .suppress > h2, .suppress_all > h2, .suppress_all * > h2 {
+    font-size: 1.5em; }
+  .suppress > h3, .suppress_all > h3, .suppress_all * > h3 {
+    font-size: 1.17em; }
 
 .frame-description {
   position: absolute;
@@ -47,6 +56,8 @@ span {
   -webkit-border-radius: 4px; }
   .frame-description span {
     display: inline; }
+    .frame-description span.tag_name {
+      font-weight: bold; }
 
 /* tag colors */
 a {
@@ -97,8 +108,8 @@ h1 {
     position: static;
     display: inline;
     margin-right: 8px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h2 {
   padding: 0;
@@ -111,8 +122,8 @@ h2 {
     position: static;
     display: inline;
     margin-right: 8px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h3 {
   padding: 0;
