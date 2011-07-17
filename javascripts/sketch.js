@@ -1,6 +1,5 @@
 $(function() {
-  $.template("frame-description",
-  '<div class="suppress_all frame-description"><span class="tag_name">{{if tag_name}}${tag_name}{{/if}}</span><span class="id">{{if id}}${id}{{/if}}</span><span class="class">{{if class}}${class}{{/if}}</span></div>');
+  $.template("frame-description", '<div class="suppress_all frame-description"><span class="tag_name">{{if tag_name}}${tag_name}{{/if}}</span><span class="id">{{if id}}${id}{{/if}}</span><span class="class">{{if class}}${class}{{/if}}</span></div>');
   $.template("_id", '<span class="id">{{if id}}${id}{{/if}}</span>');
   $.template("_class", '<span class="class">{{if class}}${class}{{/if}}</span>');
   
