@@ -39,6 +39,7 @@ body, body * {
   font-family: 'Droid Sans Mono', mono;
   font-size: 16px;
   font-weight: normal;
+  line-height: 1.75;
   @include frame();
   > .frame-description:first-child + * {
     margin-top:0.25 * $spacing;
@@ -60,6 +61,8 @@ body {
   background-color: $background;
   color: $white;
 }
+code { display: block; }
+dt:after { content: ' - '; }
 li { list-style:none; }
 span { display:inherit;}
 
@@ -106,7 +109,23 @@ span.warn {
 
 /* tag colors */
         a { @include no_frame();                }
+  acronym { @include no_frame();                }
+     abbr { @include no_frame();                }
+        b { @include no_frame();                }
+      bdo { @include no_frame($yellow, $black);
+            color: $yellow                      }
+      big { @include no_frame();                }
      body { @include frame($black);             }
+   button { @include no_frame($yellow, $black); }
+  caption { @include no_frame();                }
+   center { @include no_frame();                }
+     cite { @include no_frame();                }
+     code { @include frame($black, $green);     }
+      del { @include no_frame();                }
+      dfn { @include no_frame();                }
+       dl { @include frame();                   }
+       dt { @include no_frame();                }
+       dd { @include no_frame();                }
        em { @include no_frame();                }
    footer { @include frame($pink, $white);      }
        h1 { @include no_frame($violet, $white); }
@@ -116,12 +135,34 @@ span.warn {
        h5 { @include no_frame($violet, $white); }
        h6 { @include no_frame($violet, $white); }
    header { @include frame($pink, $white);      }
+       hr { @include no_frame($black, $pink);
+            background-color: $black;           }
+        i { @include no_frame();                }
+      img { @include no_frame();                }
+      ins { @include no_frame();                }
+    input { @include no_frame();                }
+      kbd { @include no_frame();                }
+    label { @include no_frame();                }
+   legend { @include no_frame();                }
        li { @include frame($green, $white);     }
+     mark { @include no_frame();                }
      menu { @include frame($red, $white);       }
       nav { @include frame($blue, $white);      }
         p { @include frame($orange, $white);    }
+        q { @include no_frame();                }
+        s { @include no_frame();                }
+     samp { @include no_frame($black, $green);
+            color: $green;                      }
   section { @include frame($black, $white);     }
+   select { @include no_frame();                }
+    small { @include no_frame();                }
+      sub { @include no_frame();                }
+      sup { @include no_frame();                }
      span { @include no_frame();                }
+  summary { @include no_frame();                }
    strong { @include no_frame();                }
+ textarea { @include frame();                   }
      time { @include no_frame();                }
+        u { @include no_frame();                }
        ul { @include frame($red, $white);       }
+      var { @include no_frame();                }
