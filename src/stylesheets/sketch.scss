@@ -38,9 +38,6 @@ body, body * {
   font-size: 16px;
   font-weight: normal;
   @include frame();
-  > .frame-description:first-child + * {
-    margin-top:0;
-  }
 }
 
 /* tag overrides */
