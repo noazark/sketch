@@ -1,7 +1,7 @@
 @import "border";
 @import "color";
 
-$spacing: 16px;
+$spacing: 36px;
 $base-width: 128px;
 
 @mixin frame($color: $white, $text: $black) {
@@ -26,29 +26,22 @@ $base-width: 128px;
 
 /* description */
 body, body * {
-  margin: $spacing;
+  margin: ($spacing * 0.5) 0;
   padding: $spacing;
   padding-right: 0.5 * $spacing;
   padding-bottom: 2 * $spacing;
   padding-left: 0.5 * $spacing;
   box-sizing:border-box;
-}
-
-a, abbr, acronym, address, applet, area, b, base, basefont, bdo, big,
-blockquote, body, br, button, caption, center, cite, code, col, colgroup, dd,
-del, dfn, dir, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, hr,
-i, img, input, ins, kbd, label, legend, li, map, menu, meta, noframes, noscript,
-object, ol, optgroup, option, p, param, pre, q, s, samp, select, small, span,
-strike, strong, style, sub, sup, table, tbody, td, textarea, tfoot, th, thead,
-tr, tt, u, ul {
   display:block;
-  
   @include frame();
+  & > *:first-child + * {
+    margin-top:0;
+  }
 }
 
 /* tag overrides */
 body {
-  margin: $spacing auto;
+  margin: (2* $spacing) auto;
   padding-bottom: $spacing;
   width: 8 * $base-width;
   background-color: $background;
