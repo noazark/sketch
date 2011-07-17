@@ -14,7 +14,7 @@ $(function() {
     {{/wrap}}');
   $.template("warning",
     '{{wrap "frame-description"}}\
-      <span>warning</span>\
+      <span>warning!</span>\
     {{/wrap}}');
   $.template("tag_name", '<span class="tag_name">${tag_name}</span>');
   $.template("id", '<span class="id">${id}</span>');
@@ -35,6 +35,7 @@ $(function() {
     
     if($.inArray(description.tag_name, options.warn.split(', ')) != -1 && !description.id && !description.class) {
       content = $.tmpl("warning");
+      $(this).addClass('warn');
     } else {
       content = $.tmpl("valid",description);
     }
