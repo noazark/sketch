@@ -18,7 +18,7 @@ $(function() {
     {{/wrap}}');
   $.template("tag_name", '<span class="tag_name">${tag_name}</span>');
   $.template("id", '<span class="id">${id}</span>');
-  $.template("class", '<span class="class">${classes}</span>');
+  $.template("class", '<span class="class">${class}</span>');
   
   var options = {
     ignore: '.suppress, .suppress_all, .suppress_all *, a',
@@ -30,10 +30,10 @@ $(function() {
       description = {
         tag_name: this.tagName.toLowerCase(),
         id: $(this).attr('id'),
-        classes: $(this).attr('class')
+        class: $(this).attr('class')
       };
     
-    if($.inArray(description.tag_name, options.warn.split(', ')) != -1 && !description.id && !description.classes) {
+    if($.inArray(description.tag_name, options.warn.split(', ')) != -1 && !description.id && !description.class) {
       content = $.tmpl("warning");
     } else {
       content = $.tmpl("valid",description);
