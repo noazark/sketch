@@ -1,0 +1,20 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ffi (1.0.9)
+    fssm (0.2.7)
+    haml (3.1.2)
+    rake (0.9.2)
+    rb-inotify (0.8.5)
+      ffi (>= 0.5.0)
+    sass (3.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fssm
+  haml
+  rake
+  rb-inotify
+  sass
