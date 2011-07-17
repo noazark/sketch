@@ -17,7 +17,7 @@ li, link, map, menu, meta, noframes, noscript, object, ol, optgroup, option, p, 
 s, samp, select, small, span, strike, strong, style, sub, sup, table, tbody, td,
 textarea, tfoot, th, thead, tr, tt, u, ul {
   display: block;
-  border: 5px solid #db1a1a;
+  border: 5px solid #eeeeee;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
@@ -27,11 +27,8 @@ textarea, tfoot, th, thead, tr, tt, u, ul {
   li > .frame-description, link > .frame-description, map > .frame-description, menu > .frame-description, meta > .frame-description, noframes > .frame-description, noscript > .frame-description, object > .frame-description, ol > .frame-description, optgroup > .frame-description, option > .frame-description, p > .frame-description, param > .frame-description, pre > .frame-description, q > .frame-description,
   s > .frame-description, samp > .frame-description, select > .frame-description, small > .frame-description, span > .frame-description, strike > .frame-description, strong > .frame-description, style > .frame-description, sub > .frame-description, sup > .frame-description, table > .frame-description, tbody > .frame-description, td > .frame-description,
   textarea > .frame-description, tfoot > .frame-description, th > .frame-description, thead > .frame-description, tr > .frame-description, tt > .frame-description, u > .frame-description, ul > .frame-description {
-    background-color: #db1a1a;
-    color: #eeeeee; }
-
-li {
-  list-style: none; }
+    background-color: #eeeeee;
+    color: #222222; }
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
@@ -52,12 +49,21 @@ li {
 
 /* tag colors */
 li {
-  border: 5px solid #094cb8;
+  border: 5px solid #70b30c;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
   li > .frame-description {
-    background-color: #094cb8;
+    background-color: #70b30c;
+    color: #eeeeee; }
+
+p {
+  border: 5px solid #f78c00;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  p > .frame-description {
+    background-color: #f78c00;
     color: #eeeeee; }
 
 span {
