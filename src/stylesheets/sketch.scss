@@ -1,7 +1,7 @@
 @import "border";
 @import "color";
 
-$spacing: 36px;
+$spacing: 32px;
 $base-width: 128px;
 
 @mixin frame($color: $white, $text: $black) {
@@ -20,7 +20,7 @@ $base-width: 128px;
     margin:0;
     position:static;
     display:inline;
-    margin-right: 1em;
+    margin-right: 0.25 * $spacing;
     @include base($color, $text);
   }
 }
