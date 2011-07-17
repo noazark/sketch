@@ -24,6 +24,15 @@ body, body * {
     margin-top: 8px; }
 
 /* tag overrides */
+a {
+  padding: 4px 8px !important;
+  display: inline-block;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background-color: #222222;
+  color: #eeeeee; }
+
 body {
   margin: 16px auto;
   padding: 16px;
@@ -218,6 +227,30 @@ li {
     -moz-border-radius: 4px 0 4px 0;
     -webkit-border-radius: 4px 0 4px 0;
     background-color: #70b30c;
+    color: #eeeeee; }
+
+menu {
+  border: 4px solid #db1a1a;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  menu > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #db1a1a;
+    color: #eeeeee; }
+
+nav {
+  border: 4px solid #094cb8;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  nav > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #094cb8;
     color: #eeeeee; }
 
 p {

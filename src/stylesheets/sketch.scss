@@ -46,6 +46,12 @@ body, body * {
 }
 
 /* tag overrides */
+a {
+  padding: (0.125 * $spacing) (0.25 * $spacing) !important;
+  display:inline-block;
+  @include rounded();
+  @include base($black, $white);
+}
 body {
   margin: (0.5 * $spacing) auto;
   padding: 0.5 * $spacing;
@@ -97,6 +103,8 @@ span { display:inherit;}
        h5 { @include no_frame();                }
        h6 { @include no_frame();                }
        li { @include frame($green, $white);     }
+     menu { @include frame($red, $white);       }
+      nav { @include frame($blue, $white);      }
         p { @include frame($orange, $white);    }
      span { @include no_frame();                }
    strong { @include no_frame();                }
