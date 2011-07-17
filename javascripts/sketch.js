@@ -1,7 +1,5 @@
 $(function() {
   $.template("frame-description", '<div class="suppress_all frame-description">{{if tag_name}}<span class="tag_name">${tag_name}</span>{{/if}}{{if id}} <span class="id">${id}</span>{{/if}}{{if class}} <span class="class">${class}</span>{{/if}}</div>');
-  $.template("_id", '<span class="id">{{if id}}${id}{{/if}}</span>');
-  $.template("_class", '<span class="class">{{if class}}${class}{{/if}}</span>');
   
   var options = {
     ignore: '.suppress, .suppress_all, .suppress_all *, a, div'
