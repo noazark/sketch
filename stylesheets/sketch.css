@@ -59,6 +59,40 @@ span {
   .suppress h3, .suppress_all h3, .suppress_all * h3 {
     font-size: 1.17em; }
 
+.warn {
+  color: yellow; }
+
+div.warn {
+  border: 4px solid #222222;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-style: dashed; }
+  div.warn > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #222222;
+    color: #db1a1a; }
+
+span.warn {
+  padding: 0;
+  border: none;
+  border-size: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  span.warn > .frame-description {
+    margin: 0;
+    position: static;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #222222;
+    color: #db1a1a; }
+
 .frame-description {
   position: absolute;
   margin-top: -36px;
@@ -73,6 +107,7 @@ span {
 a {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -102,6 +137,7 @@ body {
 em {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -116,9 +152,22 @@ em {
     background-color: #eeeeee;
     color: #222222; }
 
+footer {
+  border: 4px solid #de4068;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  footer > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #de4068;
+    color: #eeeeee; }
+
 h1 {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -136,6 +185,7 @@ h1 {
 h2 {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -153,6 +203,7 @@ h2 {
 h3 {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -164,12 +215,13 @@ h3 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h4 {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -181,12 +233,13 @@ h4 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h5 {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -198,12 +251,13 @@ h5 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h6 {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -215,8 +269,20 @@ h6 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
+
+header {
+  border: 4px solid #de4068;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  header > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #de4068;
+    color: #eeeeee; }
 
 li {
   border: 4px solid #70b30c;
@@ -266,9 +332,22 @@ p {
     background-color: #f78c00;
     color: #eeeeee; }
 
+section {
+  border: 4px solid #222222;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  section > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #222222;
+    color: #eeeeee; }
+
 span {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -286,10 +365,29 @@ span {
 strong {
   padding: 0;
   border: none;
+  border-size: 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
   strong > .frame-description {
+    margin: 0;
+    position: static;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #eeeeee;
+    color: #222222; }
+
+time {
+  padding: 0;
+  border: none;
+  border-size: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  time > .frame-description {
     margin: 0;
     position: static;
     display: inline-block;
@@ -311,17 +409,3 @@ ul {
     -webkit-border-radius: 4px 0 4px 0;
     background-color: #db1a1a;
     color: #eeeeee; }
-
-.warn {
-  border: 4px solid #222222;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-style: dashed;
-  color: yellow; }
-  .warn > .frame-description {
-    border-radius: 4px 0 4px 0;
-    -moz-border-radius: 4px 0 4px 0;
-    -webkit-border-radius: 4px 0 4px 0;
-    background-color: #222222;
-    color: #db1a1a; }
