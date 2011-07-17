@@ -12,12 +12,17 @@ $(function() {
         $nbsp;{{tmpl "class"}}\
       {{/if}}\
     {{/wrap}}');
+  $.template("warning",
+    '{{wrap "frame-description"}}\
+      <span>warning</span>\
+    {{/wrap}}');
   $.template("tag_name", '<span class="tag_name">${tag_name}</span>');
   $.template("id", '<span class="id">${id}</span>');
-  $.template("class", '<span class="class">${class}</span>');
+  $.template("class", '<span class="class">${classes}</span>');
   
   var options = {
-    ignore: '.suppress, .suppress_all, .suppress_all *, a, div'
+    ignore: '.suppress, .suppress_all, .suppress_all *, a',
+    warn: 'div, span'
   }
 
   $('body *').not(options.ignore).each(function(){
@@ -25,10 +30,15 @@ $(function() {
       description = {
         tag_name: this.tagName.toLowerCase(),
         id: $(this).attr('id'),
-        class: $(this).attr('class')
+        classes: $(this).attr('class')
       };
     
-    content = $.tmpl("valid",description);
+    if($.inArray(description.tag_name, options.warn.split(', ')) != -1 && !description.id && !description.classes) {
+      content = $.tmpl("warning");
+    } else {
+      content = $.tmpl("valid",description);
+    }
+    
     $(this).prepend(content);
   });
 });
