@@ -6,6 +6,7 @@ $border-width: 4px;
 
 @mixin no_border() {
   border: none;
+  border-size:0;
 }
 
 @mixin rounded($radius: $border-width) {

@@ -78,6 +78,17 @@ span { display:inherit;}
     font-size:1.17em;
   }
 }
+.warn {
+  color: $yellow;
+}
+
+div.warn {
+  @include frame($black, $red);
+  border-style: dashed;
+}
+span.warn {
+  @include no_frame($black, $red);
+}
 
 .frame-description {
   position:absolute;
@@ -110,6 +121,3 @@ span { display:inherit;}
      span { @include no_frame();                }
    strong { @include no_frame();                }
        ul { @include frame($red, $white);       }
-    .warn { @include frame($black, $red); 
-            border-style: dashed;
-            color: $yellow;                     }
