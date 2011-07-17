@@ -1,0 +1,297 @@
+!!!
+%html
+  %head
+    %title
+      Sketch - Visual HTML Scaffolding
+    %link{rel: "stylesheet", href: "stylesheets/sketch.css"}
+    %script{type: "text/javascript", src: "https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"}
+    %script{type: "text/javascript", src: "javascripts/jquery.tmpl.min.js"}
+    %script{type: "text/javascript", src: "javascripts/sketch.js"}
+
+  %body
+    %a{href: "#"}
+
+    %abbr{title: "RenderGarden Media"} RGM
+
+    %address
+      Noah H. Smith
+      %br
+      email: <a href="mailto:nsmith@rendergardenmedia.com">nsmith@rendergardenmedia.com</a>
+      %br
+      phone: 913.667.9897
+
+    %article
+      %hgroup
+        %h1 Lorem Ipsum
+        %h2 interdum magna pharetra
+      %p
+        Duis commodo tellus vel lorem pretium rutrum. Maecenas sapien urna, tincidunt eget imperdiet id, interdum vel lacus. Aliquam erat volutpat. Cras vitae magna nisi. Nulla at libero leo, eu consequat urna. Nunc ut ullamcorper orci. Nam molestie hendrerit pellentesque. In congue massa feugiat mauris pellentesque posuere auctor eget nisl. Morbi euismod, lacus quis sollicitudin pharetra, mi erat hendrerit dolor, vel lacinia orci nisl vitae ante. Proin non purus mi. Nullam vel risus lorem, ut gravida nulla.
+
+    %aside
+      %h1
+        %a{href: "http://en.wikipedia.org/wiki/Frank_Sinatra"} Frank Sinatra
+      %blockquote
+        I've been a puppet, a pauper, a pirate,
+        %br
+        A poet, a pawn and a king.
+        %br
+        I've been up and down and over and out
+        %br
+        And I know one thing:
+        %br
+        Each time I find myself, flat on my face,
+        %br
+        I pick myself up and get back in the race.
+      
+      %h1
+        %a{href: "www.foxyshazam.com/"} Foxy Shazam
+      %blockquote
+        Nine years later I watched my only daughter
+        %br
+        Walk beautifully down the aisle and she turns to me
+        %br
+        And says the six words I'll remember for the rest of my life:
+        %br
+        "EEE OOH AAH, BIGGITY BIGGITY BOO!"
+
+    %audio
+      no real audio here
+
+    %b
+      SUPER
+
+    %bdo{dir: "rtl"}
+      hello world
+
+    %big
+      DUPER
+
+    %blockquote
+      If you weren’t such a bastard
+      %br
+      You would be better off
+      %br
+      Now you’re left to...
+
+    %button
+      click me
+
+    %cite
+      Gödel, Escher, Bach
+
+    %code
+      var time = $; gotoAndPlay(time);
+
+    %del
+      OS X
+
+    %details
+      %summary Meaning of life
+      don't you wish
+
+    %dfn
+      Ambiguous
+
+    %div#purpose
+
+    %dl
+      %dt
+        Nantucket Nectars
+      %dd
+        We started Nantucket Nectars with only a blender and a dream... to make the best juice you can buy in a bottle. Today, our juices are so far from that little island off the cost of Massachusetts but our passion remains the same. We started with real fruit and never add anything that doesn't belong. The result is an all natural great tasting100% juice. Give it a try. We hope you like it.
+
+    %em
+      Whammo
+
+    %figure{title: "fig. 1-2.3"}
+      %pre
+        %code
+          :preserve
+            String.prototype.reverse = function(){
+              splitext = this.split("");
+              revertext = splitext.reverse();
+              reversed = revertext.join("");
+              return reversed;
+            }
+            
+            var str = "abc"
+            alert(str.reverse());
+
+      %figcaption
+        random snippet from the web, thank you
+        %a{href: "http://blog.stchur.com/2007/04/06/serializing-objects-in-javascript/"}stchur.com
+
+    %footer
+      The End.
+
+    %form
+      %fieldset
+        %legend Fieldset Legend
+        %label
+          Text Input Example
+        %br
+        %input{type: "text", placeholder: "subject"}
+        %textarea{placeholder: "message"}
+
+    %h1
+      Wham
+
+    %h2
+      Bam
+
+    %h3
+      Thank
+
+    %h4
+      You
+
+    %h5
+      ma'am
+
+    %h6
+      !!
+
+    %header
+      The Beginning
+
+    %hr
+
+    %i
+      WHAT!
+
+    %img
+      no example yet
+
+    %ins
+      linux
+
+    %kbd
+      Ctrl-A + Enter
+
+    %mark
+      er
+
+    %menu
+      %li action 1
+      %li action 2
+
+    %meter
+      49/100
+
+    %nav
+      %a{href: "#"} page 1
+      %a{href: "#"} page 2
+      %a{href: "#"} page 3
+      %a{href: "#"} page 4
+      %a{href: "#"} page 5
+
+    %ol
+      %li
+        Alpha
+      %li
+        Beta
+
+    %p
+      Proin pulvinar vestibulum lorem, ut condimentum velit egestas ac. Nunc ut lorem non nulla porta molestie non hendrerit libero. Fusce molestie nibh et elit pulvinar molestie venenatis quam pharetra. Nam porttitor sem ut ligula hendrerit aliquam vel id nulla. Etiam adipiscing lobortis neque, non imperdiet urna venenatis ac.
+
+    %pre
+      :preserve
+        Lord, Who createdst man in wealth and store,
+            Though foolishly he lost the same,
+                Decaying more and more,
+                    Till he became
+                      Most poore:
+                      With Thee
+                    O let me rise,
+                As larks, harmoniously,
+            And sing this day Thy victories:
+        Then shall the fall further the flight in me.
+
+    %q{cite: "Mother Goose"}
+      The Cow jumped over the moon.
+
+    %s
+      big girls don't cry
+
+    %samp
+      $ git clone git@github.com:noazark/sketch.git
+
+    %section
+      %header
+      %article
+      %footer
+
+    %select
+      %optgroup{label: "Numbers"}
+        %option One Fish
+        %option Two Fish
+
+      %optgroup{label: "Colors"}
+        %option Red Fish
+        %option Blue Fish
+
+    %small
+      Might Mouse
+
+    %span.text
+      lahh la la
+
+    %strong
+      Might Mouse
+
+    %sub
+      hell
+
+    %sup
+      heaven
+
+    %table
+      %caption
+        Sketch
+      %thead
+        %tr
+          %th a
+          %th b
+          %th c
+          %th d
+      %tbody
+        %tr
+          %td 1
+          %td 1
+          %td 1
+          %td 1
+        %tr
+          %td 1
+          %td 2
+          %td 3
+          %td 4
+        %tr
+          %td 1
+          %td 3
+          %td 6
+          %td 10
+        %tr
+          %td 1
+          %td 4
+          %td 10
+          %td 20
+      %tfoot
+        %tr
+          %td 4
+          %td 10
+          %td 20
+          %td 35
+
+    %time{datetime: "2006-03-17"}
+      V for Vendetta release
+
+    %u
+      can't
+
+    %ul
+      %li Espresso
+      %li Mocha
+      %li Chai
+
+    %var
+      foo
