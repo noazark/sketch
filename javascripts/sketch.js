@@ -36,6 +36,7 @@ $(function() {
     if($.inArray(description.tag_name, options.warn.split(', ')) != -1 && !description.id && !description.class) {
       content = $.tmpl("warning");
       $(this).addClass('warn');
+      $(this).append('Element needs a class or id to be valid');
     } else {
       content = $.tmpl("valid",description);
     }
