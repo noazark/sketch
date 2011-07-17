@@ -1,38 +1,40 @@
-$black: #222222;
-$black-shadow: #161616;
-$black-border: #111111;
+$background:#161616;
 
-$white: #EEEEEE;
-$white-shadow: #FFFFFF;
-$white-border: #EEEEEE;
+$black:#222222;
+$black-shadow:#161616;
+$black-border:#111111;
 
-$red: #DB1A1A;
-$red-shadow: #FF5757;
-$red-border: #FF4D4D;
+$white:#EEEEEE;
+$white-shadow:#FFFFFF;
+$white-border:#EEEEEE;
 
-$orange: #F78C00;
-$orange-shadow: #FFAC40;
-$orange-border: #FFB452;
+$red:#DB1A1A;
+$red-shadow:#FF5757;
+$red-border:#FF4D4D;
 
-$yellow: #FFFF00;
-$yellow-shadow: #FCE877;
-$yellow-border: #FFED66;
+$orange:#F78C00;
+$orange-shadow:#FFAC40;
+$orange-border:#FFB452;
 
-$green: #70B30C;
-$green-shadow: #AFE362;
-$green-border: #9EE632;
+$yellow:#FFFF00;
+$yellow-shadow:#FCE877;
+$yellow-border:#FFED66;
 
-$blue: #094CB8;
-$blue-shadow: #376DC4;
-$blue-border: #387DEB;
+$green:#70B30C;
+$green-shadow:#AFE362;
+$green-border:#9EE632;
 
-$violet: #8E19B5;
-$violet-shadow: #B132DB;
-$violet-border: #C72DFA;
+$blue:#094CB8;
+$blue-shadow:#376DC4;
+$blue-border:#387DEB;
 
-$pink: #DE4068;
-$pink-shadow: #FF5E86;
-$pink-border: #FF809F;
+$violet:#8E19B5;
+$violet-shadow:#B132DB;
+$violet-border:#C72DFA;
+
+$pink:#DE4068;
+$pink-shadow:#FF5E86;
+$pink-border:#FF809F;
 
 @mixin base($background: $black, $foreground: $black-inverse) {
   background-color: $background;
