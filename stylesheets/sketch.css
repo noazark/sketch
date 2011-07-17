@@ -17,6 +17,8 @@ body, body * {
   body > .frame-description, body * > .frame-description {
     background-color: #eeeeee;
     color: #222222; }
+  body > .frame-description:first-child + *, body * > .frame-description:first-child + * {
+    margin-top: 8px; }
 
 /* tag overrides */
 body {
@@ -67,7 +69,7 @@ a {
   a > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }
@@ -90,7 +92,7 @@ em {
   em > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }
@@ -104,7 +106,7 @@ h1 {
   h1 > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #8e19b5;
     color: #eeeeee; }
@@ -118,7 +120,7 @@ h2 {
   h2 > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #8e19b5;
     color: #eeeeee; }
@@ -132,7 +134,7 @@ h3 {
   h3 > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }
@@ -146,7 +148,7 @@ h4 {
   h4 > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }
@@ -160,7 +162,7 @@ h5 {
   h5 > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }
@@ -174,7 +176,7 @@ h6 {
   h6 > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }
@@ -206,7 +208,7 @@ span {
   span > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }
@@ -220,7 +222,7 @@ strong {
   strong > .frame-description {
     margin: 0;
     position: static;
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
     background-color: #eeeeee;
     color: #222222; }

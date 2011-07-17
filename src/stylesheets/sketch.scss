@@ -20,7 +20,7 @@ $base-width: 128px;
   > .frame-description {
     margin:0;
     position:static;
-    display:inline;
+    display:inline-block;
     margin-right: 0.25 * $spacing;
     @include base($color, $text);
   }
@@ -38,6 +38,9 @@ body, body * {
   font-size: 16px;
   font-weight: normal;
   @include frame();
+  > .frame-description:first-child + * {
+    margin-top:0.25 * $spacing;
+  }
 }
 
 /* tag overrides */
