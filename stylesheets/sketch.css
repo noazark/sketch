@@ -13,7 +13,7 @@ body, body * {
   body > .frame-description, body * > .frame-description {
     background-color: #eeeeee;
     color: #222222; }
-  body > *:first-child + *, body * > *:first-child + * {
+  body > .frame-description:first-child + *, body * > .frame-description:first-child + * {
     margin-top: 0; }
 
 /* tag overrides */

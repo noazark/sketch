@@ -34,7 +34,7 @@ body, body * {
   padding-left: 0.5 * $spacing;
   box-sizing:border-box;
   @include frame();
-  & > *:first-child + * {
+  & > .frame-description:first-child + * {
     margin-top:0;
   }
 } 
