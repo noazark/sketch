@@ -108,16 +108,19 @@ span.warn {
         a { @include no_frame();                }
      body { @include frame($black);             }
        em { @include no_frame();                }
+   footer { @include frame($pink, $white);      }
        h1 { @include no_frame($violet, $white); }
        h2 { @include no_frame($violet, $white); }
-       h3 { @include no_frame();                }
-       h4 { @include no_frame();                }
-       h5 { @include no_frame();                }
-       h6 { @include no_frame();                }
+       h3 { @include no_frame($violet, $white); }
+       h4 { @include no_frame($violet, $white); }
+       h5 { @include no_frame($violet, $white); }
+       h6 { @include no_frame($violet, $white); }
+   header { @include frame($pink, $white);      }
        li { @include frame($green, $white);     }
      menu { @include frame($red, $white);       }
       nav { @include frame($blue, $white);      }
         p { @include frame($orange, $white);    }
+  section { @include frame($black, $white);     }
      span { @include no_frame();                }
    strong { @include no_frame();                }
        ul { @include frame($red, $white);       }

@@ -152,6 +152,18 @@ em {
     background-color: #eeeeee;
     color: #222222; }
 
+footer {
+  border: 4px solid #de4068;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  footer > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #de4068;
+    color: #eeeeee; }
+
 h1 {
   padding: 0;
   border: none;
@@ -203,8 +215,8 @@ h3 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h4 {
   padding: 0;
@@ -221,8 +233,8 @@ h4 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h5 {
   padding: 0;
@@ -239,8 +251,8 @@ h5 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
 
 h6 {
   padding: 0;
@@ -257,8 +269,20 @@ h6 {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #8e19b5;
+    color: #eeeeee; }
+
+header {
+  border: 4px solid #de4068;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  header > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #de4068;
+    color: #eeeeee; }
 
 li {
   border: 4px solid #70b30c;
@@ -306,6 +330,18 @@ p {
     -moz-border-radius: 4px 0 4px 0;
     -webkit-border-radius: 4px 0 4px 0;
     background-color: #f78c00;
+    color: #eeeeee; }
+
+section {
+  border: 4px solid #222222;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  section > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #222222;
     color: #eeeeee; }
 
 span {
