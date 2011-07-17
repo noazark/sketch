@@ -9,14 +9,15 @@
     %script{type: "text/javascript", src: "javascripts/sketch.js"}
 
   %body
-    %a{href: "#"}
+    %a{href: "#"} link
 
     %abbr{title: "RenderGarden Media"} RGM
 
     %address
       Noah H. Smith
       %br
-      email: <a href="mailto:nsmith@rendergardenmedia.com">nsmith@rendergardenmedia.com</a>
+      email:
+      %a{href: "mailto:nsmith@rendergardenmedia.com"} nsmith@rendergardenmedia.com
       %br
       phone: 913.667.9897
 
@@ -54,17 +55,11 @@
         %br
         "EEE OOH AAH, BIGGITY BIGGITY BOO!"
 
-    %audio
-      no real audio here
+    %b SUPER
 
-    %b
-      SUPER
+    %bdo{dir: "rtl"} hello world
 
-    %bdo{dir: "rtl"}
-      hello world
-
-    %big
-      DUPER
+    %big DUPER
 
     %blockquote
       If you weren’t such a bastard
@@ -73,32 +68,25 @@
       %br
       Now you’re left to...
 
-    %button
-      click me
+    %button click me
 
-    %cite
-      Gödel, Escher, Bach
+    %cite Gödel, Escher, Bach
 
-    %code
-      var time = $; gotoAndPlay(time);
+    %code var time = $; gotoAndPlay(time);
 
-    %del
-      OS X
+    %del OS X
 
     %details
       %summary Meaning of life
-      don't you wish
+      %p don't you wish
 
-    %dfn
-      Ambiguous
+    %dfn Ambiguous
 
     %div#purpose
 
     %dl
-      %dt
-        Nantucket Nectars
-      %dd
-        We started Nantucket Nectars with only a blender and a dream... to make the best juice you can buy in a bottle. Today, our juices are so far from that little island off the cost of Massachusetts but our passion remains the same. We started with real fruit and never add anything that doesn't belong. The result is an all natural great tasting100% juice. Give it a try. We hope you like it.
+      %dt Nantucket Nectars
+      %dd We started Nantucket Nectars with only a blender and a dream... to make the best juice you can buy in a bottle. Today, our juices are so far from that little island off the cost of Massachusetts but our passion remains the same. We started with real fruit and never add anything that doesn't belong. The result is an all natural great tasting100% juice. Give it a try. We hope you like it.
 
     %em
       Whammo
@@ -119,7 +107,7 @@
 
       %figcaption
         random snippet from the web, thank you
-        %a{href: "http://blog.stchur.com/2007/04/06/serializing-objects-in-javascript/"}stchur.com
+        %a{href: "http://blog.stchur.com/2007/04/06/serializing-objects-in-javascript/"} stchur.com
 
     %footer
       The End.
@@ -127,56 +115,39 @@
     %form
       %fieldset
         %legend Fieldset Legend
-        %label
-          Text Input Example
+        %label Text Input Example
         %br
         %input{type: "text", placeholder: "subject"}
         %textarea{placeholder: "message"}
 
-    %h1
-      Wham
+    %h1 Wham
 
-    %h2
-      Bam
+    %h2 Bam
 
-    %h3
-      Thank
+    %h3 Thank
 
-    %h4
-      You
+    %h4 You
 
-    %h5
-      ma'am
+    %h5 ma'am
 
-    %h6
-      !!
+    %h6 !!
 
     %header
       The Beginning
 
     %hr
 
-    %i
-      WHAT!
+    %i WHAT!
 
-    %img
-      no example yet
+    %ins linux
 
-    %ins
-      linux
+    %kbd Ctrl-A + Enter
 
-    %kbd
-      Ctrl-A + Enter
-
-    %mark
-      er
+    %mark er
 
     %menu
       %li action 1
       %li action 2
-
-    %meter
-      49/100
 
     %nav
       %a{href: "#"} page 1
@@ -207,11 +178,9 @@
             And sing this day Thy victories:
         Then shall the fall further the flight in me.
 
-    %q{cite: "Mother Goose"}
-      The Cow jumped over the moon.
+    %q{cite: "Mother Goose"} The Cow jumped over the moon.
 
-    %s
-      big girls don't cry
+    %s big girls don't cry
 
     %samp
       $ git clone git@github.com:noazark/sketch.git
@@ -230,24 +199,18 @@
         %option Red Fish
         %option Blue Fish
 
-    %small
-      Might Mouse
+    %small Might Mouse
 
-    %span.text
-      lahh la la
+    %span.text lahh la la
 
-    %strong
-      Might Mouse
+    %strong Might Mouse
 
-    %sub
-      hell
+    %sub hell
 
-    %sup
-      heaven
+    %sup heaven
 
     %table
-      %caption
-        Sketch
+      %caption Sketch
       %thead
         %tr
           %th a
@@ -282,16 +245,13 @@
           %td 20
           %td 35
 
-    %time{datetime: "2006-03-17"}
-      V for Vendetta release
+    %time{datetime: "2006-03-17"} V for Vendetta release
 
-    %u
-      can't
+    %u can't
 
     %ul
       %li Espresso
       %li Mocha
       %li Chai
 
-    %var
-      foo
+    %var foo
