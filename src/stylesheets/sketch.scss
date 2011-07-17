@@ -20,6 +20,7 @@ $base-width: 128px;
     margin:0;
     position:static;
     display:inline;
+    margin-right: 1em;
     @include base($color, $text);
   }
 }
@@ -46,6 +47,7 @@ body {
   width: 8 * $base-width;
   background-color: $background;
   font-family: mono;
+  color: $white;
 }
 li { list-style:none; }
 span { display:inherit;}

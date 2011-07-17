@@ -23,7 +23,8 @@ body {
   padding: 18px;
   width: 1024px;
   background-color: #161616;
-  font-family: mono; }
+  font-family: mono;
+  color: #eeeeee; }
 
 li {
   list-style: none; }
@@ -86,6 +87,7 @@ span {
     margin: 0;
     position: static;
     display: inline;
+    margin-right: 1em;
     background-color: #eeeeee;
     color: #222222; }
 
