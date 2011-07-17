@@ -9,6 +9,7 @@ $base-width: 128px;
   @include border($color);
   @include rounded();
   > .frame-description {
+    @include rounded($border-width 0 $border-width 0);
     @include base($color, $text);
   }
 }
@@ -22,6 +23,7 @@ $base-width: 128px;
     position:static;
     display:inline-block;
     margin-right: 0.25 * $spacing;
+    @include rounded();
     @include base($color, $text);
   }
 }
@@ -75,8 +77,6 @@ span { display:inherit;}
   margin-top: -($spacing + $border-width);
   margin-left: -((0.5 * $spacing) + $border-width);
   padding: 0.25em 0.5em;
-  
-  @include rounded();
   span {
     display: inline;
     
@@ -101,4 +101,6 @@ span { display:inherit;}
      span { @include no_frame();                }
    strong { @include no_frame();                }
        ul { @include frame($red, $white);       }
-
+    .warn { @include frame($black, $red); 
+            border-style: dashed;
+            color: $yellow;                     }
