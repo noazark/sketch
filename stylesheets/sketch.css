@@ -25,6 +25,7 @@ body, body * {
 
 /* tag overrides */
 a {
+  margin: 0;
   padding: 4px 8px !important;
   display: inline-block;
   border-radius: 4px;
