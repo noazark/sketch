@@ -16,13 +16,14 @@ $base-width: 128px;
 
 @mixin no_frame($color: $white, $text: $black) {
   padding:0;
+  padding-right: 0.25 * $spacing;
   @include no_border();
   @include rounded();
   > .frame-description {
     margin:0;
+    margin-right: 0.25 * $spacing;
     position:static;
     display:inline-block;
-    margin-right: 0.25 * $spacing;
     @include rounded();
     @include base($color, $text);
   }
@@ -45,26 +46,6 @@ body, body * {
     margin-top:0.25 * $spacing;
   }
 }
-
-/* tag overrides */
-a {
-  margin: 0;
-  padding: (0.125 * $spacing) (0.25 * $spacing) !important;
-  display:inline-block;
-  @include rounded();
-  @include base($black, $white);
-}
-body {
-  margin: (0.5 * $spacing) auto;
-  padding: 0.5 * $spacing;
-  width: 8 * $base-width;
-  background-color: $background;
-  color: $white;
-}
-code { display: block; }
-dt:after { content: ' - '; }
-li { list-style:none; }
-span { display:inherit;}
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
@@ -166,3 +147,31 @@ span.warn {
         u { @include no_frame();                }
        ul { @include frame($red, $white);       }
       var { @include no_frame();                }
+
+
+/* tag overrides */
+a {
+  margin: 0;
+  padding: (0.125 * $spacing) (0.25 * $spacing);
+  display:inline-block;
+  @include rounded();
+  @include base($black, $white);
+}
+bdo {
+  padding-right: 0;
+  & > .frame-description {
+    margin-right: 0;
+    margin-left: (0.25 * $spacing);
+  }
+}
+body {
+  margin: (0.5 * $spacing) auto;
+  padding: 0.5 * $spacing;
+  width: 8 * $base-width;
+  background-color: $background;
+  color: $white;
+}
+code { display: block; }
+dt:after { content: ' - '; }
+li { list-style:none; }
+span { display:inherit;}
