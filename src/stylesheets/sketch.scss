@@ -8,7 +8,7 @@ $base-width: 128px;
 @mixin frame($color: $white, $text: $black) {
   @include border($color);
   @include rounded();
-  & > .frame-description {
+  > .frame-description {
     @include base($color, $text);
   }
 }
@@ -17,7 +17,7 @@ $base-width: 128px;
   padding:0;
   @include no_border();
   @include rounded();
-  & > .frame-description {
+  > .frame-description {
     margin:0;
     position:static;
     display:inline;
@@ -38,7 +38,7 @@ body, body * {
   font-size: 16px;
   font-weight: normal;
   @include frame();
-  & > .frame-description:first-child + * {
+  > .frame-description:first-child + * {
     margin-top:0;
   }
 }
@@ -59,13 +59,13 @@ span { display:inherit;}
   margin:0;
   padding:0;
   border:none;
-  & > h1 {
+  h1 {
     font-size:2em;
   }
-  & > h2 {
+  h2 {
     font-size:1.5em;
   }
-  & > h3 {
+  h3 {
     font-size:1.17em;
   }
 }
@@ -77,10 +77,10 @@ span { display:inherit;}
   padding: 0.25em 0.5em;
   
   @include rounded();
-  & span {
+  span {
     display: inline;
     
-    &.tag_name {
+    .tag_name {
       font-weight:bold;
     }
   }

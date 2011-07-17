@@ -39,11 +39,11 @@ span {
   margin: 0;
   padding: 0;
   border: none; }
-  .suppress > h1, .suppress_all > h1, .suppress_all * > h1 {
+  .suppress h1, .suppress_all h1, .suppress_all * h1 {
     font-size: 2em; }
-  .suppress > h2, .suppress_all > h2, .suppress_all * > h2 {
+  .suppress h2, .suppress_all h2, .suppress_all * h2 {
     font-size: 1.5em; }
-  .suppress > h3, .suppress_all > h3, .suppress_all * > h3 {
+  .suppress h3, .suppress_all h3, .suppress_all * h3 {
     font-size: 1.17em; }
 
 .frame-description {
@@ -56,7 +56,7 @@ span {
   -webkit-border-radius: 4px; }
   .frame-description span {
     display: inline; }
-    .frame-description span.tag_name {
+    .frame-description span .tag_name {
       font-weight: bold; }
 
 /* tag colors */
