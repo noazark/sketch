@@ -4,7 +4,7 @@ $(function() {
   $.template("_class", '<span class="class">{{if class}}${class}{{/if}}</span>');
   
   var options = {
-    ignore: '.suppress, .suppress_all, a, div'
+    ignore: '.suppress, .suppress_all, .suppress_all *, a, div'
   }
   $('body *').not(options.ignore).each(function(){
     var
