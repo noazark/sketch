@@ -2,6 +2,7 @@
 @import "color";
 
 $spacing: 18px;
+$base-width: 128px;
 
 @mixin frame($color: $white, $text: $black) {
   @include border($color);
@@ -12,10 +13,6 @@ $spacing: 18px;
 }
 
 /* description */
-body {
-  background-color: $black;
-}
-
 body, body * {
   margin: $spacing;
   padding: $spacing;
@@ -25,16 +22,26 @@ body, body * {
   box-sizing:border-box;
 }
 
-a, abbr, acronym, address, applet, area, b, base, basefont, bdo, big, blockquote, body, br, 
-button, caption, center, cite, code, col, colgroup, dd, del, dfn, dir, div, dl, dt, em, 
-fieldset, font, form, h1, h2, h3, h4, h5, h6, hr, i, img, input, ins, kbd, label, legend, 
-li, link, map, menu, meta, noframes, noscript, object, ol, optgroup, option, p, param, pre, q, 
-s, samp, select, small, span, strike, strong, style, sub, sup, table, tbody, td, 
-textarea, tfoot, th, thead, tr, tt, u, ul {
+a, abbr, acronym, address, applet, area, b, base, basefont, bdo, big,
+blockquote, body, br, button, caption, center, cite, code, col, colgroup, dd,
+del, dfn, dir, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, hr,
+i, img, input, ins, kbd, label, legend, li, map, menu, meta, noframes, noscript,
+object, ol, optgroup, option, p, param, pre, q, s, samp, select, small, span,
+strike, strong, style, sub, sup, table, tbody, td, textarea, tfoot, th, thead,
+tr, tt, u, ul {
   display:block;
   
   @include frame();
 }
+
+/* tag overrides */
+body {
+  margin: $spacing auto;
+  background-color: $black;
+  width: 8 * $base-width;
+}
+li { list-style:none; }
+span { display:inline-block; width:$base-width;}
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
@@ -55,7 +62,8 @@ textarea, tfoot, th, thead, tr, tt, u, ul {
 }
 
 /* tag colors */
-li { @include frame($green, $white); }
-p { @include frame($orange, $white); }
-span { @include frame($yellow, $black); }
-ul { @include frame($white, $black); }
+         li { @include frame($green, $white);  }
+          p { @include frame($orange, $white); }
+       span { @include frame($yellow, $black); }
+         ul { @include frame($white, $black);  }
+
