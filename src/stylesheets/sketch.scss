@@ -70,9 +70,18 @@ span { display:inherit;}
 }
 
 /* tag colors */
+        a { @include no_frame();             }
      body { @include frame($black);          }
+       em { @include no_frame();             }
+       h1 { @include no_frame();             }
+       h2 { @include no_frame();             }
+       h3 { @include no_frame();             }
+       h4 { @include no_frame();             }
+       h5 { @include no_frame();             }
+       h6 { @include no_frame();             }
        li { @include frame($green, $white);  }
         p { @include frame($orange, $white); }
      span { @include no_frame();             }
+   strong { @include no_frame();             }
        ul { @include frame($red, $white);    }
 
