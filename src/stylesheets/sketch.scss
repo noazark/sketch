@@ -80,8 +80,8 @@ span { display:inherit;}
   span {
     display: inline;
     
-    .tag_name {
-      font-weight:bold;
+    &.id, &.class {
+      padding-left:0.25 * $spacing;
     }
   }
 }

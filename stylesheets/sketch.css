@@ -56,8 +56,8 @@ span {
   -webkit-border-radius: 4px; }
   .frame-description span {
     display: inline; }
-    .frame-description span .tag_name {
-      font-weight: bold; }
+    .frame-description span.id, .frame-description span.class {
+      padding-left: 8px; }
 
 /* tag colors */
 a {
