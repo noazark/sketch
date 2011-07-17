@@ -1,10 +1,10 @@
 /* description */
 body, body * {
-  margin: 18px;
-  padding: 18px;
-  padding-right: 9px;
-  padding-bottom: 36px;
-  padding-left: 9px;
+  margin: 16px;
+  padding: 16px;
+  padding-right: 8px;
+  padding-bottom: 32px;
+  padding-left: 8px;
   box-sizing: border-box; }
 
 a, abbr, acronym, address, applet, area, b, base, basefont, bdo, big,
@@ -15,10 +15,10 @@ object, ol, optgroup, option, p, param, pre, q, s, samp, select, small, span,
 strike, strong, style, sub, sup, table, tbody, td, textarea, tfoot, th, thead,
 tr, tt, u, ul {
   display: block;
-  border: 5px solid #eeeeee;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
+  border: 4px solid #eeeeee;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
   a > .frame-description, abbr > .frame-description, acronym > .frame-description, address > .frame-description, applet > .frame-description, area > .frame-description, b > .frame-description, base > .frame-description, basefont > .frame-description, bdo > .frame-description, big > .frame-description,
   blockquote > .frame-description, body > .frame-description, br > .frame-description, button > .frame-description, caption > .frame-description, center > .frame-description, cite > .frame-description, code > .frame-description, col > .frame-description, colgroup > .frame-description, dd > .frame-description,
   del > .frame-description, dfn > .frame-description, dir > .frame-description, div > .frame-description, dl > .frame-description, dt > .frame-description, em > .frame-description, fieldset > .frame-description, font > .frame-description, form > .frame-description, h1 > .frame-description, h2 > .frame-description, h3 > .frame-description, h4 > .frame-description, h5 > .frame-description, h6 > .frame-description, hr > .frame-description,
@@ -31,16 +31,18 @@ tr, tt, u, ul {
 
 /* tag overrides */
 body {
-  margin: 18px auto;
-  background-color: #222222;
-  width: 1024px; }
+  margin: 16px auto;
+  padding-bottom: 16px;
+  width: 1024px;
+  background-color: #161616;
+  font-family: mono; }
 
 li {
   list-style: none; }
 
 span {
   display: inline-block;
-  width: 128px; }
+  width: 256px; }
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
@@ -50,48 +52,57 @@ span {
 
 .frame-description {
   position: absolute;
-  margin-top: -23px;
-  margin-left: -14px;
+  margin-top: -20px;
+  margin-left: -12px;
   padding: 0.25em 0.5em;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
   .frame-description span {
     display: inline; }
 
 /* tag colors */
+body {
+  border: 4px solid #222222;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  body > .frame-description {
+    background-color: #222222;
+    color: #222222; }
+
 li {
-  border: 5px solid #70b30c;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
+  border: 4px solid #70b30c;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
   li > .frame-description {
     background-color: #70b30c;
     color: #eeeeee; }
 
 p {
-  border: 5px solid #f78c00;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
+  border: 4px solid #f78c00;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
   p > .frame-description {
     background-color: #f78c00;
     color: #eeeeee; }
 
 span {
-  border: 5px solid yellow;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
+  border: 4px solid yellow;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
   span > .frame-description {
     background-color: yellow;
     color: #222222; }
 
 ul {
-  border: 5px solid #eeeeee;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
+  border: 4px solid #eeeeee;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
   ul > .frame-description {
     background-color: #eeeeee;
     color: #222222; }

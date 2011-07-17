@@ -1,5 +1,4 @@
-$spacing: 18px;
-$border-width: 5px;
+$border-width: 4px;
 
 @mixin border($color: $black) {
   border: $border-width solid $color;

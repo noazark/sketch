@@ -1,7 +1,7 @@
 @import "border";
 @import "color";
 
-$spacing: 18px;
+$spacing: 16px;
 $base-width: 128px;
 
 @mixin frame($color: $white, $text: $black) {
@@ -37,11 +37,13 @@ tr, tt, u, ul {
 /* tag overrides */
 body {
   margin: $spacing auto;
-  background-color: $black;
+  padding-bottom: $spacing;
   width: 8 * $base-width;
+  background-color: $background;
+  font-family: mono;
 }
 li { list-style:none; }
-span { display:inline-block; width:$base-width;}
+span { display:inline-block; width:2*$base-width;}
 
 /* classes */
 .suppress, .suppress_all, .suppress_all * {
@@ -62,6 +64,7 @@ span { display:inline-block; width:$base-width;}
 }
 
 /* tag colors */
+       body { @include frame($black);          }
          li { @include frame($green, $white);  }
           p { @include frame($orange, $white); }
        span { @include frame($yellow, $black); }
