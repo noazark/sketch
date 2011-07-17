@@ -3,7 +3,7 @@ body, body * {
   margin: 18px 0;
   padding: 36px;
   padding-right: 18px;
-  padding-bottom: 72px;
+  padding-bottom: 54px;
   padding-left: 18px;
   box-sizing: border-box;
   display: block;
@@ -19,8 +19,8 @@ body, body * {
 
 /* tag overrides */
 body {
-  margin: 72px auto;
-  padding-bottom: 36px;
+  margin: 18px auto;
+  padding: 18px;
   width: 1024px;
   background-color: #161616;
   font-family: mono; }

@@ -29,7 +29,7 @@ body, body * {
   margin: ($spacing * 0.5) 0;
   padding: $spacing;
   padding-right: 0.5 * $spacing;
-  padding-bottom: 2 * $spacing;
+  padding-bottom: 1.5 * $spacing;
   padding-left: 0.5 * $spacing;
   box-sizing:border-box;
   display:block;
@@ -37,12 +37,12 @@ body, body * {
   & > *:first-child + * {
     margin-top:0;
   }
-}
+} 
 
 /* tag overrides */
 body {
-  margin: (2* $spacing) auto;
-  padding-bottom: $spacing;
+  margin: (0.5 * $spacing) auto;
+  padding: 0.5 * $spacing;
   width: 8 * $base-width;
   background-color: $background;
   font-family: mono;
