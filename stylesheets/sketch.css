@@ -336,7 +336,7 @@ dfn {
     color: #222222; }
 
 dl {
-  border: 4px solid #eeeeee;
+  border: 4px solid #db1a1a;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px; }
@@ -344,8 +344,8 @@ dl {
     border-radius: 4px 0 4px 0;
     -moz-border-radius: 4px 0 4px 0;
     -webkit-border-radius: 4px 0 4px 0;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #db1a1a;
+    color: #eeeeee; }
 
 dt {
   padding: 0;
@@ -363,8 +363,8 @@ dt {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #70b30c;
+    color: #eeeeee; }
 
 dd {
   padding: 0;
@@ -382,8 +382,8 @@ dd {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    background-color: #eeeeee;
-    color: #222222; }
+    background-color: #70b30c;
+    color: #eeeeee; }
 
 em {
   padding: 0;
@@ -750,6 +750,18 @@ nav {
     background-color: #094cb8;
     color: #eeeeee; }
 
+ol {
+  border: 4px solid #db1a1a;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  ol > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #db1a1a;
+    color: #eeeeee; }
+
 p {
   border: 4px solid #f78c00;
   border-radius: 4px;
@@ -977,6 +989,104 @@ textarea {
     background-color: #eeeeee;
     color: #222222; }
 
+table {
+  border: 4px solid #db1a1a;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  table > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #db1a1a;
+    color: #222222; }
+
+thead {
+  border: 4px solid #de4068;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  thead > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #de4068;
+    color: #eeeeee; }
+
+tbody {
+  border: 4px solid #de4068;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  tbody > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #de4068;
+    color: #eeeeee; }
+
+tfoot {
+  border: 4px solid #de4068;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  tfoot > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #de4068;
+    color: #eeeeee; }
+
+tr {
+  border: 4px solid #222222;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  tr > .frame-description {
+    border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -webkit-border-radius: 4px 0 4px 0;
+    background-color: #222222;
+    color: #eeeeee; }
+
+th {
+  padding: 0;
+  padding-right: 8px;
+  border: none;
+  border-size: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  th > .frame-description {
+    margin: 0;
+    margin-right: 8px;
+    position: static;
+    display: inline-block;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #222222;
+    color: #eeeeee; }
+
+td {
+  padding: 0;
+  padding-right: 8px;
+  border: none;
+  border-size: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  td > .frame-description {
+    margin: 0;
+    margin-right: 8px;
+    position: static;
+    display: inline-block;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #222222;
+    color: #eeeeee; }
+
 time {
   padding: 0;
   padding-right: 8px;
@@ -1081,3 +1191,18 @@ li {
 
 span {
   display: inherit; }
+
+table {
+  display: block; }
+
+thead {
+  display: block; }
+
+tbody {
+  display: block; }
+
+tfoot {
+  display: block; }
+
+tr {
+  display: block; }

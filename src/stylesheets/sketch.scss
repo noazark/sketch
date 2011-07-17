@@ -104,9 +104,9 @@ span.warn {
      code { @include frame($black, $green);     }
       del { @include no_frame();                }
       dfn { @include no_frame();                }
-       dl { @include frame();                   }
-       dt { @include no_frame();                }
-       dd { @include no_frame();                }
+       dl { @include frame($red, $white);       }
+       dt { @include no_frame($green, $white);  }
+       dd { @include no_frame($green, $white);  }
        em { @include no_frame();                }
    footer { @include frame($pink, $white);      }
        h1 { @include no_frame($violet, $white); }
@@ -129,6 +129,7 @@ span.warn {
      mark { @include no_frame();                }
      menu { @include frame($red, $white);       }
       nav { @include frame($blue, $white);      }
+       ol { @include frame($red, $white);       }
         p { @include frame($orange, $white);    }
         q { @include no_frame();                }
         s { @include no_frame();                }
@@ -143,6 +144,13 @@ span.warn {
   summary { @include no_frame();                }
    strong { @include no_frame();                }
  textarea { @include frame();                   }
+    table { @include frame($red);               }
+    thead { @include frame($pink, $white);      }
+    tbody { @include frame($pink, $white);      }
+    tfoot { @include frame($pink, $white);      }
+       tr { @include frame($black, $white);     }
+       th { @include no_frame($black, $white);  }
+       td { @include no_frame($black, $white);  }
      time { @include no_frame();                }
         u { @include no_frame();                }
        ul { @include frame($red, $white);       }
@@ -175,3 +183,8 @@ code { display: block; }
 dt:after { content: ' - '; }
 li { list-style:none; }
 span { display:inherit;}
+table { display:block; }
+thead { display:block; }
+tbody { display:block; }
+tfoot { display:block; }
+tr { display:block; }
