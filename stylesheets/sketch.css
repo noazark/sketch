@@ -380,6 +380,24 @@ strong {
     background-color: #eeeeee;
     color: #222222; }
 
+time {
+  padding: 0;
+  border: none;
+  border-size: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  time > .frame-description {
+    margin: 0;
+    position: static;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #eeeeee;
+    color: #222222; }
+
 ul {
   border: 4px solid #db1a1a;
   border-radius: 4px;

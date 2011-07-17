@@ -123,4 +123,5 @@ span.warn {
   section { @include frame($black, $white);     }
      span { @include no_frame();                }
    strong { @include no_frame();                }
+     time { @include no_frame();                }
        ul { @include frame($red, $white);       }
